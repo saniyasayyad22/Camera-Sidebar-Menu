@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: poppins;
+}
+#check{
+    opacity: 0;
+}
+.main_box{
+  height:100vh;
+  width: 100vw;
+  background: url("camera.jpg");
+  background-size: cover;
+}
+.btn1 i{
+    color: white;
+    line-height: 60px;
+    position: absolute;
+    left: 15px;
+    font-size: 30px;
+    font-weight: 700;
+    font-weight:400px;
+    transition: all 0.3s linear;
+
+    
+}
+.sidebarmenu{
+    height: 100vh;
+    width: 300px;
+    background-color:rgb(255,255,255,0.1);
+    box-shadow: 0 0 2px;
+    position: absolute;
+    left: -300px;
+    transition: all 0.3s linear;
+}
+
+.sidebarmenu .logo a{
+   
+    position: absolute;
+    line-height: 60px;
+    left: 70px;
+    color: white;
+    text-decoration: none;
+    font-size: larger;
+    font-weight: 400px;  
+    
+}
+
+.btn2 i{
+    color: white;
+    position: absolute;
+    line-height: 60px;
+    left: 260px;
+    font-weight: bold;
+    font-size: larger;
+    opacity: 0.6;
+    font-size: 20px;
+    transition: all 0.3s linear;
+}
+.menu{
+    position: absolute;
+    top: 100px;
+    color: rgb(255,255,255,0.9);
+}
+.menu li{
+    height: 60px;
+    width: 290px;
+    padding: 5px;
+    
+}
+.menu li i{
+    padding-right: 15px;
+    font-size: large;
+}
+.menu li a{
+    color: white;
+    text-decoration: none;
+}
+.social_media {
+   position: absolute;
+   bottom: 50px;
+   left: 170px;  
+}
+.social_media a{
+    color: rgb(255,255,255,0.4);
+    padding: 5px;
+    font-size: large;
+}
+.menu li:hover{
+    box-shadow: 0 0 5px rgb(255,255,255,0.3);
+}
+.social_media i:hover{
+   font-weight: 900;
+   color: rgb(255,255,255,1);
+   transform: scale(1.5);
+}
+#check:checked ~ .sidebarmenu{
+    left: 0px; 
+}
+#check:checked ~ .btn1{
+    opacity: 0;
+}
+.btn1 i:hover{
+    font-size: 40px;
+}
+.btn2 i:hover{
+    font-size: 30px;
+}
